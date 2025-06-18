@@ -128,7 +128,7 @@ left = 0.6458 - 0.6653 * satisfaction_level
 
 •  📌 Langage : R
 
-•  📁 Fichier de données : HR_comma_sep.csv
+•  📁 Fichier de données : HR_comma_sep_dataset.csv
 
 •  🔧 Packages utilisés : readr, e1071
 
