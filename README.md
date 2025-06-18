@@ -19,67 +19,67 @@ Le projet suit les étapes classiques d’analyse de données :
 
 •Colonnes principales :
 
-      satisfaction_level
+   satisfaction_level
       
-      last_evaluation
+   last_evaluation
       
-      number_project
+   number_project
       
-      average_montly_hours
+   average_montly_hours
       
-      time_spend_company
+   time_spend_company
       
-      Work_accident
+   Work_accident
       
-      left (employé a quitté l'entreprise ou non)
+   left (employé a quitté l'entreprise ou non)
       
-      promotion_last_5years
+   promotion_last_5years
       
-      department
+   department
       
-      salary
+   salary
   
 
 🧪 1. Chargement des données
 
-library(readr)
-
-HR_comma_sep <- read_csv("HR_comma_sep.csv")
-
-View(HR_comma_sep)
+      library(readr)
+      
+      HR_comma_sep <- read_csv("HR_comma_sep.csv")
+      
+      View(HR_comma_sep)
 
 📊 2. Analyse univariée
 
 ✏️ Dimensions et aperçu
 
-dim(HR_comma_sep)
-
-summary(HR_comma_sep)
+      dim(HR_comma_sep)
+      
+      summary(HR_comma_sep)
 
 📈 Statistiques de la variable satisfaction_level
 
 • Moyenne, médiane, min, max, variance, écart-type, quantiles.
 
-mean(HR_comma_sep$satisfaction_level)
-
-median(HR_comma_sep$satisfaction_level)
-
-min(HR_comma_sep$satisfaction_level)
-
-max(HR_comma_sep$satisfaction_level)
-
-quantile(HR_comma_sep$satisfaction_level)
-
-var(HR_comma_sep$satisfaction_level)
-
-sd(HR_comma_sep$satisfaction_level)
+      mean(HR_comma_sep$satisfaction_level)
+      
+      median(HR_comma_sep$satisfaction_level)
+      
+      min(HR_comma_sep$satisfaction_level)
+      
+      max(HR_comma_sep$satisfaction_level)
+      
+      quantile(HR_comma_sep$satisfaction_level)
+      
+      var(HR_comma_sep$satisfaction_level)
+      
+      sd(HR_comma_sep$satisfaction_level)
 
 🔍 Interprétation :
 L’écart-type élevé suggère une grande dispersion de la satisfaction entre les employés.
 
 🧷 Variable catégorique : salary
-
-table(HR_comma_sep$salary)
+      
+      table(HR_comma_sep$salary)
 
 📌 La catégorie "low" est la plus fréquente, suivie de "medium".
 
@@ -87,13 +87,13 @@ table(HR_comma_sep$salary)
 
 🔄 Corrélation
 
-cor(HR_comma_sep$satisfaction_level, HR_comma_sep$left)
+      cor(HR_comma_sep$satisfaction_level, HR_comma_sep$left)
 
 📉 Régression linéaire
 
-linearMod <- lm(left ~ satisfaction_level, data=HR_comma_sep)
-
-summary(linearMod)
+      linearMod <- lm(left ~ satisfaction_level, data=HR_comma_sep)
+      
+      summary(linearMod)
 
 Modèle estimé :
 left = 0.6458 - 0.6653 * satisfaction_level
@@ -102,19 +102,19 @@ left = 0.6458 - 0.6653 * satisfaction_level
 
 🔵 Scatter plot
 
-scatter.smooth(x=HR_comma_sep$satisfaction_level, y=HR_comma_sep$left, main="Satisfaction vs Départ")
+      scatter.smooth(x=HR_comma_sep$satisfaction_level, y=HR_comma_sep$left, main="Satisfaction vs Départ")
 
 🌈 Density Plots
 
-plot(density(HR_comma_sep$satisfaction_level))
-
-plot(density(HR_comma_sep$left))
+      plot(density(HR_comma_sep$satisfaction_level))
+      
+      plot(density(HR_comma_sep$left))
 
 📦 Boxplots
 
-boxplot(HR_comma_sep$satisfaction_level)
-
-boxplot(HR_comma_sep$left)
+      boxplot(HR_comma_sep$satisfaction_level)
+      
+      boxplot(HR_comma_sep$left)
 
 🧠 Interprétations générales
 
