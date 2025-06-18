@@ -14,28 +14,30 @@ Le projet suit les étapes classiques d’analyse de données :
 
 
 📁 Dataset
+
 •Nom du fichier : HR_comma_sep.csv
+
 •Colonnes principales :
 
-  satisfaction_level
-  
-  last_evaluation
-  
-  number_project
-  
-  average_montly_hours
-  
-  time_spend_company
-  
-  Work_accident
-  
-  left (employé a quitté l'entreprise ou non)
-  
-  promotion_last_5years
-  
-  department
-  
-  salary
+      satisfaction_level
+      
+      last_evaluation
+      
+      number_project
+      
+      average_montly_hours
+      
+      time_spend_company
+      
+      Work_accident
+      
+      left (employé a quitté l'entreprise ou non)
+      
+      promotion_last_5years
+      
+      department
+      
+      salary
   
 
 🧪 1. Chargement des données
