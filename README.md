@@ -4,6 +4,30 @@ Ce projet propose une **analyse exploratoire des données RH** à l’aide du la
 
 ---
 
+## Table des matières
+
+1. [📊 Introduction](#-analyse-des-données-rh-avec-r)
+2. [🗂️ Structure du projet](#structure-du-projet)
+3. [📁 Jeu de données](#-jeu-de-données)
+4. [🧪 1. Chargement des données](#-1-chargement-des-données)
+5. [📊 2. Analyse univariée](#-2-analyse-univariée)
+    - [✏️ Dimensions et aperçu](#-dimensions-et-apercu)
+    - [📈 Statistiques de satisfaction_level](#-statistiques-de-la-variable-satisfaction_level)
+    - [🧷 Variable catégorique : salary](#-variable-catégorique--salary)
+6. [🔗 3. Analyse bivariée](#-3-analyse-bivariée)
+    - [🔄 Corrélation](#-corrélation)
+    - [📉 Régression linéaire](#-régression-linéaire)
+7. [📊 4. Visualisations](#-4-visualisations)
+    - [🔵 Scatter Plot](#-scatter-plot)
+    - [🌈 Density Plots](#-density-plots)
+    - [📦 Boxplots](#-boxplots)
+8. [🧠 Interprétations générales](#-interprétations-générales)
+9. [🚀 Pour démarrer](#-pour-démarrer)
+10. [🔧 Packages utilisés](#-packages-utilisés)
+11. [📄 À propos](#-à-propos)
+
+---
+
 ## 🗂️ Structure du projet
 
 Le projet suit les étapes classiques de l’analyse de données :
